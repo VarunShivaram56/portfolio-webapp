@@ -44,6 +44,13 @@ Preview the production build:
 pnpm preview
 ```
 
+Run the production server locally:
+
+```bash
+pnpm build
+pnpm start
+```
+
 ## Project Structure
 
 ```text
@@ -59,3 +66,17 @@ src/main.jsx     React entry point
 - LinkedIn: https://www.linkedin.com/in/varun-shivaram-32538132b/
 - GitHub: https://github.com/varunshivaram56
 - Codolio: https://codolio.com/profile/VarunShivaram
+
+## Azure App Service Deployment
+
+This project is prepared for Azure App Service by serving the Vite build output from `server.js`.
+
+- Build command: `pnpm install --frozen-lockfile && pnpm build`
+- Startup command: `npm start`
+- Runtime: `Node 20 LTS`
+
+The repository also includes a GitHub Actions workflow at `.github/workflows/azure-webapp.yml`.
+To use it, create these GitHub repository secrets:
+
+- `AZURE_WEBAPP_NAME`
+- `AZURE_WEBAPP_PUBLISH_PROFILE`
