@@ -17,6 +17,12 @@ A responsive React portfolio website for Varun Shivaram, designed with a dark in
 - Vite
 - CSS
 - pnpm
+- Node.js 22 LTS
+
+## Runtime Requirement
+
+This project targets `Node.js 22.12+`.
+That matches Vite's official Node 22 support range and is the right baseline for Azure App Service when you select `Node 22 LTS`.
 
 ## Getting Started
 
