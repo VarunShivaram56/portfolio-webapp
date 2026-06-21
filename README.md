@@ -80,3 +80,6 @@ To use it, create these GitHub repository secrets:
 
 - `AZURE_WEBAPP_NAME`
 - `AZURE_WEBAPP_PUBLISH_PROFILE`
+
+When connecting GitHub from Azure App Service Deployment Center, choose `Use available workflow`.
+This workflow expects publish-profile based deployment and does not require `azure/login` or `AZURE_CREDENTIALS`.
